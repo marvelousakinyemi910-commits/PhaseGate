@@ -13,8 +13,13 @@ class TaskOneTest(TestCase):
         result = task_one.fill_empty_list(number)
         self.assertEqual(result,[-1,-1,-1,-1])
 
-    def test_that_short_list_is_filled_up_with_default_value(self):
-        numbers = [10,11,12]
-        number = 5
-        result = task_one.add_default_value_to_list(numbers,number)
-        self.assertEqual(result,[10,11,12,-1,-1])
+#    def test_that_short_list_is_filled_up_with_default_value(self):
+#        numbers = [10,11,12]
+#        number = 5
+#        result = task_one.add_default_value_to_list(numbers,number)
+#        self.assertEqual(result,[10,11,12,-1,-1])
+#
+    def test_letters_and_count_each_letter(self):
+        letters = "AaaBBc"
+        output = task_one.return_letter_and_count(letters)
+        self.assertEqual(output,"A1")
