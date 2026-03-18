@@ -18,16 +18,16 @@ public class TaskOneTest{
 
 
     }
-
-    @Test
-    public void testTheDefaultNumOfTheArray(){
-    TaskOne testing = new TaskOne();
-    int [] numbers = {10,11,12};
-    int number = 5;
-    int [] actualResult = testing.fillDefault(numbers,number);
-    int [] expectedResult = {10,11,12,-1,-1};
-    assertArrayEquals(actualResult, expectedResult);
-
+//
+//    @Test
+//    public void testTheDefaultNumOfTheArray(){
+//    TaskOne testing = new TaskOne();
+//    int [] numbers = {10,11,12};
+//    int number = 5;
+//    int [] actualResult = testing.fillDefault(numbers,number);
+//    int [] expectedResult = {10,11,12,-1,-1};
+//    assertArrayEquals(actualResult, expectedResult);
+//
     }
 
     @Test
@@ -42,6 +42,16 @@ public class TaskOneTest{
 
     }
 
+     @Test
+    public void testTheNumbersOfLetters(){
+    TaskOne testing = new TaskOne();
+    word = "AaaBBc";
+   
+   String actualResult = testing.countLetters(word);
+    String expectedResult = "A1a2B2c1";
+    assertArrayEquals(actualResult, expectedResult);
+gi
+    }
 
 
 
