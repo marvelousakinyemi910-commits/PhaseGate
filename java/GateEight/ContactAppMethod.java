@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 public class ContactAppMethod{
     public int getLengthOfPhoneNumber(String phoneNumber){
+        
        int lengthOfPhoneNumber = phoneNumber.length();
-        if(lengthOfPhoneNumber < 11 || lengthOfPhoneNumber > 15){
-            throw new IllegalArgumentException("Length of number should be between 11 and  15");
-        }
+
+        
+        return lengthOfPhoneNumber;
+        
 
         }
     public String addContact (String firstName, String lastName, String phoneNumber){

@@ -4,7 +4,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
 
 public class ContactAppMethodTest{
+     @Test
+    public void testlengthOfPhoneNumber(){
+    ContactAppMethod testing = new  ContactAppMethod();
+    int expected = 11;
+    int actual = testing.getLengthOfPhoneNumber("08160599791");
+    assertEquals(expected,actual);
 
+}
+    
     @Test
     public void testThatContactDetailsIsAddSuccessfully(){
     ContactAppMethod testing = new  ContactAppMethod();
