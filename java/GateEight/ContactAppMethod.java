@@ -1,5 +1,12 @@
 import java.util.ArrayList;
 public class ContactAppMethod{
+    public int getLengthOfPhoneNumber(String phoneNumber){
+       int lengthOfPhoneNumber = phoneNumber.length();
+        if(lengthOfPhoneNumber < 11 || lengthOfPhoneNumber > 15){
+            throw new IllegalArgumentException("Length of number should be between 11 and  15");
+        }
+
+        }
     public String addContact (String firstName, String lastName, String phoneNumber){
         ArrayList<String> contactApp = new ArrayList <> ();
         contactApp.add(firstName);
@@ -12,21 +19,45 @@ public class ContactAppMethod{
 
 }
     public String removeContact (String firstName, String lastName, String phoneNumber){
-        ArrayList<String> contactApp = new ArrayList <> ();
-        contactApp.add(firstName);
-        contactApp.add(lastName);
-        contactApp.add (phoneNumber);
-        
-        if(contactApp.contains( phoneNumber)){
-            contactApp.remove(phoneNumber);
+         ArrayList<String> contactApp = new ArrayList <> ();
+         contactApp.add(firstName);
+         contactApp.add(lastName);
+         contactApp.add(phoneNumber);
+        if(contactApp.contains(phoneNumber)){
+           contactApp.remove(phoneNumber);
         }
-
-     return "contact successfully removed";
-
-
-
-
+         return "contact successfully removed";
 
 }
 
+   public String findContactByPhoneNumber(String firstName, String lastName, String phoneNumber){
+    
+        ArrayList<String> contactApp = new ArrayList <> ();
+    
+        contactApp.add(firstName);
+         contactApp.add(lastName);
+         contactApp.add(phoneNumber);
+
+       
+        if(contactApp.contains(phoneNumber)){
+            
+            return firstName;
+         }  
+        return null;
 }
+
+    public String findContactByFirstName(String firstName, String lastName, String phoneNumber){
+        
+         ArrayList<String> contactApp = new ArrayList <> ();
+    
+         contactApp.add(firstName);
+         contactApp.add(lastName);
+         contactApp.add(phoneNumber);
+        if(contactApp.contains(firstName)){
+            
+            return phoneNumber;
+         }  
+         return null;
+    }
+}
+

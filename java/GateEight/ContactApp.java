@@ -18,17 +18,17 @@ public class ContactApp{
 
     public static void removeContact(){
         System.out.println("Enter Phone number to delete:  ");
-         phoneNumber = input.nextLine();
+        String phoneNumber = input.nextLine();
          System.out.println("Contact removed succefully");
 }
 
     public static void findContact(){
         System.out.println("Enter Phone number to delete:  ");
-         phoneNumber = input.nextLine();
+        String phoneNumber = input.nextLine();
          System.out.println("Contact found succefully");
 
-     //       if(phoneNumber == addContact(firstName,lastName,phoneNumber){
-
+         
+            
 
         }
     
@@ -36,7 +36,11 @@ public class ContactApp{
 
 
     public static void main(String[] args){
-       addContact();
-       removeContact();
-        }
+
+    addContact();
+    removeContact();         
+  
+  
+     
+     }   
 }
