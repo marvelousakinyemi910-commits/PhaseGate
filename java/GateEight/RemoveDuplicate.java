@@ -27,6 +27,12 @@ public class RemoveDuplicate{
             }
             
             int [] newNumber = new int [counter];
+            int count = 0;
+            newNumber[0] = numbers[index];
+             for(int index = 0; index < numbers.length; index++){
+
+
+            }
               
                 
             
